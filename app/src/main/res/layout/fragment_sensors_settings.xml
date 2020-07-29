@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android.support.design="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.app.io.SmartAgro.MQTTPublishFragment"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <Button
+        android:id="@+id/fabBack"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Inapoi la pagina de abonare"
+        android:background="@drawable/button_rounded_corners"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="5dp"
+        android:text="Senzori Raspberry Pi (WiFi)"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <Switch
+        android:id="@+id/swRpTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="100dp"
+        android:text="Temperatura"
+        android:textOff="Off"
+        android:textOn="On" />
+    <Switch
+        android:id="@+id/swRpUmid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="100dp"
+        android:text="Umiditate"
+        android:textOff="Off"
+        android:textOn="On" />
+    <Switch
+        android:id="@+id/swRpUmidSol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="100dp"
+        android:text="Umiditate sol"
+        android:textOff="Off" />
+    <Switch
+        android:id="@+id/swRpGaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="130dp"
+        android:text="Gaz"
+        android:textOff="Off"
+        android:textOn="On" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="5dp"
+        android:text="Senzori ESP (WiFi)"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <Switch
+        android:id="@+id/swESPTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="190dp"
+        android:text="Temperatura"
+        android:textOff="Off"
+        android:textOn="On" />
+    <Switch
+        android:id="@+id/swESPUmid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="190dp"
+        android:text="Umiditate"
+        android:textOff="Off"
+        android:textOn="On" />
+    <Switch
+        android:id="@+id/swESPUmidSol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="190dp"
+        android:text="Umiditate sol"
+        android:textOff="Off"/>
+    <Switch
+        android:id="@+id/swESPGaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="220dp"
+        android:text="Gaz"
+        android:textOff="Off"
+        android:textOn="On" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="5dp"
+        android:text="Senzori Libelium (WiFi)"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <Switch
+        android:id="@+id/swLibTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="280dp"
+        android:text="Temperatura"
+        android:textOff="Off"
+        android:textOn="On" />
+    <Switch
+        android:id="@+id/swLibUmid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="280dp"
+        android:text="Umiditate"
+        android:textOff="Off"
+        android:textOn="On" />
+    <Switch
+        android:id="@+id/swLibUmidSol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="280dp"
+        android:text="Umiditate sol"
+        android:textOff="Off"/>
+    <Switch
+        android:id="@+id/swLibGaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="310dp"
+        android:text="Gaz"
+        android:textOff="Off"
+        android:textOn="On" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="5dp"
+        android:text="Senzori LoPy (LoRa)"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <Switch
+        android:id="@+id/swLopiTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="370dp"
+        android:text="Temperatura"
+        android:textOff="Off"
+        android:textOn="On" />
+    <Switch
+        android:id="@+id/swLopiUmid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="370dp"
+        android:text="Umiditate"
+        android:textOff="Off"
+        android:textOn="On" />
+    <Switch
+        android:id="@+id/swLopiUmidSol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="370dp"
+        android:text="Umiditate sol"
+        android:textOff="Off"/>
+    <Switch
+        android:id="@+id/swLopiGaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="400dp"
+        android:text="Gaz"
+        android:textOff="Off"
+        android:textOn="On" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="5dp"
+        android:text="Nivel alerta"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <EditText
+        android:id="@+id/editTextNivel"
+        android:layout_width="wrap_content"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="445dp"
+        android:layout_marginLeft="120dp"
+        android:gravity="center_vertical"
+        android:textSize="15dp"
+        android:text="5"/>
+    <Button
+        android:id="@+id/fabSave"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="500dp"
+        android:text="Salvare"
+        android:background="@drawable/button_rounded_corners"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.core.widget.NestedScrollView>
